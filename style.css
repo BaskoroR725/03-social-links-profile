@@ -1,0 +1,70 @@
+:root{
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey-700: hsl(0, 0%, 20%);
+  --clr-grey-800: hsl(0, 0%, 12%);
+  --clr-grey-900: hsl(0, 0%, 8%);
+
+  --ff-primary: 'Inter', sans-serif;
+  --fs-body: 0.875rem;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+
+body{
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  background-color: var(--clr-grey-900);
+  color: var(--clr-white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.profile-card{
+  background-color: var(--clr-grey-800);
+  width: 100%;
+  max-width: 24rem;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.profile-header{
+  margin-bottom: 1.5rem;
+}
+
+.profile-avatar{
+  width:5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.location{
+  color: var(--clr-green);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.bio{
+  color: var(--clr-white);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
