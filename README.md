@@ -18,6 +18,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### The challenge
 
 Users should be able to:
+
 - See hover and focus states for all interactive elements on the page.
 - Navigate the profile card using a keyboard (Accessibility focus).
 
@@ -27,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/yourusername/social-links-profile](https://github.com/yourusername/social-links-profile)
-- Live Site URL: [https://yourusername.github.io/social-links-profile/](https://yourusername.github.io/social-links-profile/)
+- Solution URL: [https://github.com/BaskoroR725/03-social-links-profile.git](https://github.com/BaskoroR725/03-social-links-profile.git)
+- Live Site URL: [https://baskoror725.github.io/03-social-links-profile/](https://baskoror725.github.io/03-social-links-profile/)
 
 ## My process
 
