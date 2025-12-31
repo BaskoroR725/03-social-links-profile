@@ -34,16 +34,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   min-height: 100vh;
-  padding: 1.5rem;
+  padding-block: clamp(1.5rem, 5vh, 3rem);
+  padding-inline: 1.5rem;
+  gap: 2rem;
 }
 
 .profile-card {
   background-color: var(--clr-grey-800);
   width: 100%;
   max-width: 24rem;
-  padding: 2.5rem;
+  padding: 1.5rem;
   border-radius: 0.75rem;
   text-align: center;
 }
@@ -58,7 +59,7 @@ body {
   border-radius: 50%;
   margin-bottom: 1.5rem;
   object-fit: cover;
-  display: block;   
+  display: block;
   margin-inline: auto;
 }
 
@@ -81,6 +82,10 @@ h1 {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 .social-links {
   list-style: none;
   display: flex;
@@ -97,7 +102,7 @@ h1 {
   font-weight: 700;
   padding: 0.75rem;
   border-radius: 0.5rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 .social-links a:hover,
@@ -116,15 +121,45 @@ h1 {
 
 .attribution a {
   color: var(--clr-green);
-  text-decoration: none;
 }
 
 .attribution a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23.4375em) {
   .profile-card {
-    padding: 1.5rem;
+    padding: 2.5rem;
+  }
+
+  .profile-header {
+    margin-block-end: 1.5rem; /* Logical property */
+  }
+
+  .profile-avatar {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    margin-block-end: 1.5rem;
+    object-fit: cover;
+    display: block;
+    margin-inline: auto;
+  }
+
+  .location {
+    color: var(--clr-green);
+    font-weight: 700;
+    margin-block-end: 1.5rem;
+  }
+
+  .bio {
+    line-height: 1.5;
+    margin-block-end: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-links a {
+    transition: none;
   }
 }
